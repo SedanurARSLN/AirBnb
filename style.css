@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+ --main-color:#6FDCE3;
+ --black-color:#FEFDED;
+ --border:0.1rem solid rgba(255,255,255,0.4)
+
+}
+section{
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color:var(--main-color);
+    cursor: pointer;
+}
+
+.heading{
+    color: #F3CA52;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #2c13e7;
+
+}
+
+.heading span{
+    color:#0E46A3;
+    text-transform: uppercase;
+}
+.search-input{
+    font-size: 1.5rem;
+    color: #0e0e0e;
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+.header{
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 7%;
+   margin: 2rem 7%;
+   border-radius: 30rem;
+   box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.9);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+.header .navbar a {
+   margin:0 1rem;
+   font-size: 1.6rem;
+   border: bottom 0.1rem solid transparent;
+}
+.header .navbar.active,
+.header.navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+.Ana{
+    min-height: 50vh;
+    background:url(../images/tanıtım.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+.Ana .content{
+    max-width: 60rem;
+}
+.Ana .content h3{
+    font-size: 6rem;
+    color: #fff;
+}
+.Ana .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.hizmetler .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.hizmetler .box-container .box{
+    padding: 3rem;
+    background-color: #FEFDED;
+    border-radius: 3rem;
+    background-color: #FEFDED;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hizmetler .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.hizmetler .box-container .box .doctor-category{
+   font-size: 1.4rem ;
+}
+.hizmetler .box-container .box .h3{
+    font-size: 4rem ;
+    padding: 1rem 0;
+ }
+ 
+ .hakkımızda .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+ }
+
+.hakkımızda .row .image{
+    flex: 1 1 45rem;
+    background-color: #FEFDED;
+}
+
+.hakkımızda .row .img{
+    background-color: #FEFDED;
+    width: 700%;
+}
+.hakkımızda .row .content{
+    flex: 1 1 45rem;
+}
+.hakkımızda .row .content h3{
+    font-size: 3rem;
+    color: #0E46A3;
+}
+.hakkımızda .row .content p{
+    font-size: 1.1rem;
+    color:black;
+    padding: 1rem 0;
+    line-height: 1.8;
+    background-color: #FEFDED;
+}
+
+.yorum .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.yorum .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #FEFDED;
+    border-radius: 3rem;
+}
+.yorum .box-container .box p{
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+   padding: 2rem 0;
+}
+.yorum .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.yorum .box-container .box h3{
+   padding: 1rem 0;
+   font-size: 2rem;
+   color: #e43707;
+}
+.yorum .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:gold;
+ }
+
+.iletişim .row{
+    display: flex;
+    background-color:#FEFDED;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.iletişim .row .map{
+   flex: 1 1 20rem;
+   width: 50%;
+   object-fit: cover; 
+}
+.iletişim .row form{
+    flex: 1 1 45rem;
+   padding: 2rem 2rem;
+   text-align: center;
+}
+.iletişim .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #010101;
+}
+.iletişim .row form .inputBox{
+   display: flex;
+   align-items: center;
+   margin: 2rem 0;
+}
+.iletişim .row form .inputBox i{
+   color: #0e0e0e;
+   font-size: 1.5rem;
+   padding-left: 1.5rem;
+}
+.iletişim .row form .inputBox input{
+   width: 50%;
+   padding: 1.2rem;
+   font-size: 1.2rem;
+   color: #010101;
+   text-transform: none;
+   background-color: none;
+}
+.haber .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.haber .box-container .box{
+    background-color: #FEFDED;
+    border-radius: 3rem;
+}
+.haber .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+.haber .box-container .box .image img{
+    height: 100%;
+   object-fit: cover;
+   width: 100%;
+}
+.haber .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.footer{
+    background-color:black;
+    text-align: center;
+}
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+.footer .search .search-input{
+    width: 30rem;
+}
+.footer .search .btn-primary{
+    background-color: #7BC9FF;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+.footer .share{
+    padding: 2rem 0;
+}
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+.footer .links a{
+  background-color:#3f28f0;
+  padding: 0.7rem 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.footer .links a:hover{
+   background-color: var(--black-color); 
+   opacity: 0.7rem;
+}
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5 rem;
+}
+.footer .credit span{
+   color: red;
+}
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  display: inline-block;
+}
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform:capitalize;
+    transition: 0.2s ease ;
+}
+html{
+    font-size: 62.5%;
+}
+
+.logo {
+    height:70px;
+  }
